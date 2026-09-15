@@ -15,7 +15,7 @@ class Learners(models.Model):
     applicaton_status = models.CharField(max_length=20, choices=[('Pending', 'Pending'), ('Approved', 'Approved'), ('Rejected', 'Rejected')], default='Pending')
     document_type = models.CharField(max_length=50, choices=[('Affidavit', 'Affidavit'), ('ID', 'ID'), ('CV', 'CV'), ('Matric Certificate', 'Matric Certificate'), ('SARS Document', 'SARS Document')])
     enrollment_date = models.DateField(auto_now_add=True)
-   
+    programme_id = models.ForeignKey('programmes.Programmes', on_delete=models.CASCADE, default=1)
 
     def __str__(self):
         return self.first_name + ' ' + self.last_name
