@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class assessments_submissions(models.Model):
+class AssessmentsSubmissions(models.Model):
 
     SUBMISSION_STATUS= [('Submitted', 'Submitted'), ('Not Submitted', 'Not Submitted')]
     RESULT_STATUSES = [('Pass', 'Pass'), ('Fail', 'Fail')]
