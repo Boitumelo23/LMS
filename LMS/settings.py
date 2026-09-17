@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'programmes',
     'facilitators',
     'assessments',
+    'learning_units'
 ]
 
 MIDDLEWARE = [

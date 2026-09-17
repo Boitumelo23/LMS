@@ -1,5 +1,6 @@
 from django.db import models
 from facilitators.models import Facilitators
+from learning_units.models import LearningUnits
 
 # Create your models here.
 class Assessment(models.Model):
